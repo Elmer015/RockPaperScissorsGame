@@ -65,7 +65,7 @@ function App() {
             Make Your Move
           </h2>
 
-          <div className="flex justify-center gap-3">
+          <div className="flex justify-center gap-3 py-5">
             <ChoiceBtn choice="Rock" onClick={handleChoice} />
             <ChoiceBtn choice="Paper" onClick={handleChoice} />
             <ChoiceBtn choice="Scissors" onClick={handleChoice} />
@@ -75,10 +75,10 @@ function App() {
         {/*Game Button*/}
         <div className="flex justify-center gap-3 py-10">
           <button
-            className="rounded-lg bg-yellow-600 px-5 py-2 font-medium text-white hover:bg-yellow-700"
+            className="rounded-lg bg-red-600 px-5 py-2 font-medium text-white hover:bg-red-700"
             onClick={handlePlayAgain}
           >
-            Play Again
+            Reset Game
           </button>
         </div>
 
