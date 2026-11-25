@@ -5,14 +5,14 @@ export function GetBotChoice(){
     return choice[randomIndex];
 }
 
-export function ResultCondition(player1Choice, player2Choice){
-    if(player1Choice === player2Choice){
+export function ResultCondition(player1Choice, botChoice){
+    if(player1Choice === botChoice){
         return "Draw!";
     }
 
-    if((player1Choice === "Rock" && player2Choice === "Scissors") || (player1Choice === "Paper" && player2Choice === "Rock") || (player1Choice === "Scissors" && player2Choice === "Paper")){
+    if((player1Choice === "Rock" && botChoice === "Scissors") || (player1Choice === "Paper" && botChoice === "Rock") || (player1Choice === "Scissors" && botChoice === "Paper")){
         return "Player 1 wins!";
     }
 
-    return "Player 2 wins!";
+    return "Bot wins!";
 }

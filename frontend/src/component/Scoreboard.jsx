@@ -1,4 +1,4 @@
-function Scoreboard({ player1Score, player2Score}) {
+function Scoreboard({ player1Score, botScore}) {
     return (
         <div className="scoreboard text-white">
             <h2 className="text-xl font-bold text-center">Scoreboard</h2>
@@ -9,8 +9,8 @@ function Scoreboard({ player1Score, player2Score}) {
                     <p>{player1Score}</p>
                 </div>
                 <div className="text-center">
-                    <h3 className="font-semibold">Player 2</h3>
-                    <p>{player2Score}</p>
+                    <h3 className="font-semibold">Bot</h3>
+                    <p>{botScore}</p>
                 </div>
             </div>
         </div>
