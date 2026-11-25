@@ -1,4 +1,4 @@
-function Scoreboard({ player1Score, player2Score, drawScore }) {
+function Scoreboard({ player1Score, player2Score}) {
     return (
         <div className="scoreboard">
             <h2 className="text-xl font-bold text-center">Scoreboard</h2>

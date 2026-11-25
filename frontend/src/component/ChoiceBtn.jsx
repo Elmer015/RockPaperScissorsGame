@@ -1,4 +1,4 @@
-function ChoiceBtn({ choice, onClick }) {
+function ChoiceBtn({ choice, onClick}) {
   return (
     <button
       className="choice_btn"

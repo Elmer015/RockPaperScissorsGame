@@ -5,7 +5,7 @@ export function GetBotChoice(){
     return choice[randomIndex];
 }
 
-export function ResultCondition(player1Choice, player2Choice) {
+export function ResultCondition(player1Choice, player2Choice){
     if(player1Choice === player2Choice){
         return "Draw!";
     }
