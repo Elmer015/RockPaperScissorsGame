@@ -10,7 +10,7 @@ function ChoiceBtn({ choice, onClick}) {
   };
   return (
     <button
-      className="choice_btn hover:shadow-lg hover:scale-125 transition-transform duration-300"
+      className="choice_btn hover:shadow-lg hover:scale-125 transition-transform duration-300 rounded-lg bg-[#9EDAE5] p-1"
       onClick={() => onClick(choice)}
     >
     <img src={images[choice]} alt={choice} className="w-20 h-20" />

@@ -1,6 +1,6 @@
 function Scoreboard({ player1Score, player2Score}) {
     return (
-        <div className="scoreboard">
+        <div className="scoreboard text-white">
             <h2 className="text-xl font-bold text-center">Scoreboard</h2>
 
             <div className="flex justify-center gap-99 py-2">

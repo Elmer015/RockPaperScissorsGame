@@ -3,6 +3,7 @@ import Result from './component/Result'
 import Scoreboard from './component/Scoreboard'
 import ChoiceBtn from './component/ChoiceBtn'
 import { GetBotChoice, ResultCondition} from './utils/Logic'
+import backgroundImage from './assets/background.png'
 
 function App() {
   const [player1Choice, setPlayer1Choice] = useState(null);
@@ -36,12 +37,12 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen py-15">
+    <div className="min-h-screen py-15" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover' }}>
       <div className="mx-auto max-w-lg">
 
         {/*Title*/}
         <div className="text-center py-10">
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-4xl font-bold  text-white">
             Rock Paper Scissors
           </h1>
         </div>
@@ -61,7 +62,7 @@ function App() {
 
         {/*Choices*/}
         <div>
-          <h2 className="text-center text-lg font-semibold pt-45">
+          <h2 className="text-center text-lg font-semibold pt-35 text-white">
             Make Your Move
           </h2>
 
